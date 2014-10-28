@@ -11,10 +11,10 @@
 	"msg":"成功",
 	"data": 
 	{
-		"banner":["http://...",...]
-		"project":[ {"title":"...","image_url":"http://..."},...].],
-		"inheritor":[ {"title":"...","image_url":"http://..."},...],
-		"news":[ {"title":"...","image_url":"http://...","summary":"..."},...],
+		"banner":[ {"id":1,"image_url":"http://...","link_url":"http://..."},...],
+		"project":[ {"id":1,"title":"...","content":"...","type":{"id":1,"type":"..."},"image_url":"http://..."},...],
+		"inheritor":[ {"id":1,"title":"...","sex":"...","age":"...","project":{"id":1,"title":"...","content":"...","type":{"id":1,"type":"..."},"image_url":"http://..."},"content":"...","type":{"id":1,"type":"..."},"image_url":"http://..."},...],
+		"news":[ {"id":1,"title":"...","content":"...","type":{"id":1,"type":"..."},"image_url":"http://...","from":"...","datetime":"..."},...]
 	}
 }
 ```
@@ -25,7 +25,7 @@
 
 | name | type | desc |
 | - | - | - |
-| genre | int | 音乐、舞蹈等分类 |
+| typeid | int | 音乐、舞蹈等分类 |
 
 * 返回：
 
@@ -35,7 +35,10 @@
 	"msg":"成功",
 	"data": 
 	{
-		"project":[ {"title":"...","image_url":"http://..."},...],
+		"banner":null,
+		"project":[ {"id":1,"title":"...","content":"...","type":{"id":1,"type":"..."},"image_url":"http://..."},...],
+		"inheritor":null,
+		"news":null
 	}
 }
 ```
@@ -47,7 +50,7 @@
 
 | name | type | desc |
 | - | - | - |
-| genre | int | 音乐、舞蹈等分类 |
+| typeid | int | 音乐、舞蹈等分类 |
 
 * 返回：
 
@@ -57,7 +60,10 @@
 	"msg":"成功",
 	"data": 
 	{
-		"inheritor":[ {"title":"...","image_url":"http://..."},...],
+		"banner":null,
+		"project":null,
+		"inheritor":[ {"id":1,"title":"...","sex":"...","age":"...","project":{"id":1,"title":"...","content":"...","type":{"id":1,"type":"..."},"image_url":"http://..."},"content":"...","type":{"id":1,"type":"..."},"image_url":"http://..."},...],
+		"news":null
 	}
 }
 ```
@@ -74,7 +80,11 @@
 	"msg":"成功",
 	"data": 
 	{
-		"news":[ {"title":"...","image_url":"http://...","summary":"..."},...],
+		"banner":null,
+		"project":null,
+		"inheritor":null,
+		"news":[ {"id":1,"title":"...","content":"...","type":{"id":1,"type":"..."},"image_url":"http://...","from":"...","datetime":"..."},...]
+	
 	}
 }
 ```
@@ -86,7 +96,7 @@
 
 | name | type | desc |
 | - | - | - |
-| genre | int | 传承基地、展示场馆等分类 |
+| typeid | int | 传承基地、展示场馆等分类 |
 
 * 返回：
 
@@ -96,6 +106,7 @@
 	"msg":"成功",
 	"data": 
 	{
-		"carrier":[ {"title":"...","image_url":"http://..."},...],
+		"carrier":[ {"id":1,"title":"...","content","...","type":{"id":1,"type":"..."},"image_url":"http://..."},...],
 	}
 }
+```
