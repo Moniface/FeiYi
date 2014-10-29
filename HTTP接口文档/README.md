@@ -5,10 +5,10 @@
 * 入参：
 | name | type | desc |
 :----------- | :----------- | :-----------
-|  BCount | int | baner图片数量默认5，可省略 |
-|  ICount | int | inheritor传承人数量默认4，可省略 |
-|  NCount | int | news新闻数量默认10，可省略  |
-|  PCount | int | project项目数量默认4，可省略 |
+| BCount | int | baner图片数量默认5，可省略 |
+| ICount | int | inheritor传承人数量默认4，可省略 |
+| NCount | int | news新闻数量默认10，可省略  |
+| PCount | int | project项目数量默认4，可省略 |
 
 * 返回：
 
